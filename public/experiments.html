@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiments</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .experiments-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .experiments-column {
+            flex: 1;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .experiments-column h3 {
+            text-align: center;
+            color: #4CAF50;
+        }
+    </style>
 </head>
 <body>
-    <h1>Experiments</h1>
-    <ul>
-        <li><a href="exp4Coding.html">Experiment 4 coding</a></li>
-    </ul>
+    <div class="container">
+        <h1>Experiments</h1>
+        <div class="experiments-container">
+            <div class="experiments-column">
+                <h3>Computational Experiments</h3>
+                <ul>
+                    <li><a href="exp4Coding.html">Experiment 4 coding</a></li>
+                    <!-- Add more computational experiments as needed -->
+                </ul>
+            </div>
+            <div class="experiments-column">
+                <h3>Lab Experiments</h3>
+                <ul>
+                    <!-- Add lab experiments here -->
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
