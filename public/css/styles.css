@@ -24,6 +24,29 @@ body {
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #31363F;
+    color: white;
+}
+
+.container.dark-theme {
+    background-color: #31363F;
+}
+
+header.dark-theme, main.dark-theme, section.dark-theme {
+    background-color: #31363F;
+    color: white;
+}
+
+a.dark-theme {
+    color: #bb86fc;
+}
+
+a.dark-theme:hover {
+    color: #3700b3;
+}
 header {
     background-color: #a81ca1;
     color: white;
