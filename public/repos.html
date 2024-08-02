@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Repositories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .repos-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .repos-column {
+            flex: 1;
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .repos-column h3 {
+            text-align: center;
+            color: #a81ca1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Repositories</h1>
+        <div class="repos-container">
+            <div class="repos-column">
+                <h3>Profile Info</h3>
+                <p id="name"></p>
+                <h3>Repositories Info</h3>
+                <ul id="repo-list">
+                    <li>Website Project</li>
+                </ul>
+    <div class="container">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/gitAPI.js"></script> 
+
+</body>
+
+</html>

@@ -28,7 +28,7 @@ body {
 /* Dark theme styles */
 body.dark-theme {
     background-color: #31363F;
-    color: white;
+    color: #a81ca1;
 }
 
 .container.dark-theme {

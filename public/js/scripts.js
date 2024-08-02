@@ -1,4 +1,3 @@
-// scripts.js
 
 /**
  * Function to apply a dark theme to the website.
