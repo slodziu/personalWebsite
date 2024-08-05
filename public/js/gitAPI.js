@@ -39,13 +39,14 @@ const render = () => {
     const fetchWrapper = new FetchWrapper(gitURL);
     fetchWrapper.get(`/users/${profileName}`)
         .then(data => {
-            const nameField = document.querySelector('#name');
-            data.forEach(repo => {
-                const listItem = document.createElement('li');
-                nameField.textContent = repo.name;
-                listItem.textContent = repo.name;
-                repoList.appendChild(listItem);
-            })
+            const nameField = document.querySelector('#name')
+            nameField.textContent = `Name: ${data.login} Bio: ${data.bio}`
         });
-}
+    fetchWrapper.get(`/users/${profileName}/repos`).then(data=>{
+            data.forEach(datum=>{
+                console.log(datum)
+                repoList.insertAdjacentHTML('beforeend', `<li><h2>${datum.full_name}</h2><p>${datum.description}</p></li>`)
+            })
+    })
+}   
 document.addEventListener('DOMContentLoaded', render);

@@ -10,6 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2"
+    "create-vite": "^5.4.0",
+    "date-fns": "^3.6.0",
+    "express": "^4.19.2",
+    "learnjavascript-online-npm": "^1.2.0",
+    "lodash-es": "^4.17.21"
   }
 }
