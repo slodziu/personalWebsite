@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+div, section, article, aside, header, main, nav {
+    border-radius: 10px; /* Adjust the value as needed */
 }
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -17,6 +21,7 @@ body {
     min-height: 100vh;
 }
 .container {
+    border-radius: 10px;
     max-width: 800px;
     width: 100%;
     background: #fff;
@@ -64,15 +69,18 @@ h1 {
 }
 /* Navigation styles */
 nav ul {
+    border-radius:10px;
     list-style: none;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 nav ul li {
+    border-radius:10px;
     margin: 0 10px;
 }
 nav ul li a {
+    border-radius:10px;
     text-decoration: none;
     color: #007bff;
     font-weight: bold;

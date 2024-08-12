@@ -37,15 +37,10 @@ const profileName = 'slodziu'
 const repoList = document.querySelector('#repo-list');
 const render = () => {
     const fetchWrapper = new FetchWrapper(gitURL);
-    fetchWrapper.get(`/users/${profileName}`)
-        .then(data => {
-            const nameField = document.querySelector('#name')
-            nameField.textContent = `Name: ${data.login} Bio: ${data.bio}`
-        });
     fetchWrapper.get(`/users/${profileName}/repos`).then(data=>{
             data.forEach(datum=>{
                 console.log(datum)
-                repoList.insertAdjacentHTML('beforeend', `<li><h2>${datum.full_name}</h2><p>${datum.description}</p></li>`)
+                repoList.insertAdjacentHTML('beforeend', `<li><a href=${datum.clone_url} target="_blank"><h2>${datum.full_name}</h2></a><p>${datum.description}</p></li>`)
             })
     })
 }   
